@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="com.apmdemo.resources.Listeners"/>
+<listener class-name="com.apmdemo.resources.ExtentReporterNG"/>
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.apmdemo.testcases.Preference_dependenciesTest"/>
+      <class name="com.apmdemo.testcases.Expandable_List_Test"/>
+      <class name="com.apmdemo.testcases.Date_Time_widget_Test"/>
+      <class name="com.apmdemo.testcases.Custom_Adapter_Test"/>
+     
+      <class name="com.apmdemo.testcases.PreferenceWifi_Setting_Test"/>
+      <class name="com.apmdemo.testcases.LongPress_PeopleName_Enable_Alert_Test"/>
+      <class name="com.apmdemo.testcases.HomepageTest"/>
+      <class name="com.apmdemo.testcases.Drag_and_Drop_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

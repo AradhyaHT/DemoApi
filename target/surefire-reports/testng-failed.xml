@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.apmdemo.resources.Listeners"/>
+    <listener class-name="com.apmdemo.resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.apmdemo.testcases.PreferenceWifi_Setting_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="killAllNodes"/>
+          <include name="dependenciesLinkClick"/>
+        </methods>
+      </class> <!-- com.apmdemo.testcases.PreferenceWifi_Setting_Test -->
+      <class name="com.apmdemo.testcases.Date_Time_widget_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="killAllNodes"/>
+          <include name="tapOn_Change_Time_Test"/>
+          <include name="tapOn_Change_Date_Test"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.apmdemo.testcases.Date_Time_widget_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
